@@ -1,0 +1,67 @@
+.recording__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 700px;
+  min-height: 250px;
+  border-radius: 20px;
+  background-color: #0095d4;
+  padding: 20px;
+  margin-right: 100px;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.recording__delete {
+  position: absolute;
+  right: 22px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.recording__top {
+  &--one {
+    margin-bottom: 15px;
+  }
+
+  &--title {
+    max-width: 500px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  &--author {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &--data {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+.recording__bottom--btn {
+  font-size: 16px;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 15px 0 15px 0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: #4DD599;
+    color: #fff;
+  }
+}

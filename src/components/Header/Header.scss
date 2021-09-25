@@ -1,0 +1,17 @@
+.header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  &__container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    background-color: #42B883;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+}
