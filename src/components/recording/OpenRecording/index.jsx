@@ -24,7 +24,7 @@ function OnRecording() {
             }
         }
         return getPost()
-    },[])
+    },[id])
 
     return (
         <>
@@ -36,17 +36,17 @@ function OnRecording() {
                         </div>
                     </DocumentTitle>
                 ) : (
-                    <DocumentTitle title={post?.title}>
+                    <DocumentTitle title={post.title}>
                         <div className="openRecording">
                             <div className="openRecording__container">
                                 <div className="openRecording__top">
-                                    <h2 className="openRecording__title">{post?.title}</h2>
+                                    <h2 className="openRecording__title">{post.title}</h2>
                                     <Link to="/" className="openRecording__btn--home">Вернуться на главную страницу</Link>
                                 </div>
-                                <div className="openRecording__author">Автор записи: {post?.author}</div>
-                                <div className="openRecording__date">Дата публикации: {post?.date}</div>
+                                <div className="openRecording__author">Автор записи: {post.author}</div>
+                                <div className="openRecording__date">Дата публикации: {post.date}</div>
                                 <div className="openRecording__content">
-                                    {post?.text[0]?.props?.children[0]}
+                                    {post.text[0].props.children[0]}
                                 </div>
                             </div>
                         </div>

@@ -26,7 +26,7 @@ function App() {
         }
 
         return axiosData()
-    })
+    }, [])
 
     return (
         <DocumentTitle title="Главная">
